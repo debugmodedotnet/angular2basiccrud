@@ -1,0 +1,10 @@
+<h1>{{message}}</h1>
+  <div class="row col-md-6 col-md-offset-3">
+  <input type="number" [(ngModel)]="num1" class="form-control" placeholder="number 1" />
+  <br/>
+  <input type="number" [(ngModel)]="num2"class="form-control" placeholder = "number 2"/>  
+  <br/>
+  <button class="btn btn-info form-control" (click)="add()">Add</button>
+  <br/>
+  <h2 class="messagetitle">Result = {{res}}</h2>
+  </div>

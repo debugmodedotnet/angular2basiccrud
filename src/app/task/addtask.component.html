@@ -1,0 +1,41 @@
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-6">
+<a routerLink="/home" class="btn btn-default">
+  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Home
+</a>
+</div>
+  <div class="col-md-offset-3 col-md-3">
+    <a routerLink="/tasks" class="btn btn-warning">Show Tasks</a>
+  </div>
+</div>
+<br/>
+<br/>
+<div class="row col-md-8 col-md-offset-2">
+ 
+
+  
+    <form (ngSubmit)="taskSubmit()" #addform="ngForm">
+      <div class="form-group">
+        <label for="name">Task</label>
+        <input type="text" [(ngModel)]="model.Title" 
+        name="title" 
+        class="form-control" id="name"
+         required #title="ngModel">
+      </div>
+       <div [hidden]="title.valid || title.pristine" 
+             class="alert alert-danger">
+          Task Title is required
+        </div>     
+      <div class="form-group">
+  <label for="power">Status</label>
+  <select class="form-control" id="status" 
+  [(ngModel)]="model.Status" name="status"
+   required>
+    <option *ngFor="let s of status" [value]="s">{{s}}</option>
+  </select>
+</div>
+      <button type="submit" class="btn btn-default form-control" [disabled]="!addform.form.valid" >Add Task</button>
+    </form>
+</div>
