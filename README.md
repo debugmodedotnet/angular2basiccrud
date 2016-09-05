@@ -1,26 +1,23 @@
-# Angular 2 and TypeScript Bare Bones Project
+# Running the Application
 
-The Bare Bones project is an Angular 2 starter project that has the npm modules, 
-configuration, scripts, folders and routing in place to make getting started 
-with an Angular 2 project easy!
+##Create a table with schema shown as below. Give same column names with the cases. 
 
-Here's what is in the project:
+Id – string (PK)
+Title – String 
+Status – String 
+Insert some initial data in the table such that on running application will be loaded with some tasks. Make sure to insert done or pending as the value of status. 
 
-* Angular 2 scripts and TypeScript configuration are ready to go
-* Angular 2 bootstrapper wired up to the app component
-* App component with basic routing applied
-* Homepage component 
-* A single "feature" component (represents a custom feature your app would have)
-* A simple data service to provide data and show dependency injection
-* Routing between the homepage and the "feature"
-* Bootstrap for CSS
-* live-server used to launch the site and reload it as you make changes
 
-It's a minimal app intended to get you up and running quickly so the rest is up to you!
+##REST API or Web API 
 
-If you're using VS Code, install my [Angular 2 code snippets](http://codewithdan.com/2016/03/19/angular-2-typescript-and-html-snippets-for-vs-code) 
-to simplify the process of writing Angular 2 code. The code snippets make it easy
-to build Angular 2 components, services, pipes, directives and more.
+Create a REST API which will perform CRUD operation on the table. You can create REST service using any development stack of your choice. Just make sure to follow standard of REST and all operations like PUT, POST, DELETE, and GET will be performed on the same URL.
+
+If you wish to create ASP.NET Web API, my article on same may help you. 
+
+
+[Web API Step by Step ]http://www.infragistics.com/community/blogs/dhananjay_kumar/archive/2015/06/05/a-step-by-step-guide-to-working-with-the-asp-net-web-api-and-angularjs.aspx
+
+
 
 
 ## Running the Application
